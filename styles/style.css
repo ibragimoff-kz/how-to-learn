@@ -27,12 +27,17 @@
   position: relative;
 }
 
-.logo_place_header {
-  position: absolute;
+.logo {
+  width: 183px;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo_place_header {
+  position: absolute;
   background-image: url(../images/logo.svg);
 }
 
@@ -55,6 +60,11 @@
   font-size: 18px;
   z-index: 3;
   margin: 0;
+}
+
+.header__link {
+  color: #2F80ED;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -109,15 +119,15 @@
   margin: 0;
 }
 
-.two-columns__main-text p:nth-of-type(2) {
-  margin: 30px 0;
-}
-
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 30px;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -236,49 +246,21 @@
 .section-title_theme_dark {
   color: #fff;
   margin: 90px auto 0;
-  text-align: center;
-  width: 60%;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: 700;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
   margin: 20px auto 0;
-  text-align: center;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 400;
 }
 
 .table_theme_dark {
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto 90px;
-  justify-content: space-between;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   padding-top: 80px;
-}
-
-.table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0 0 20px;
-}
-
-.table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
 }
 
 .kaufman__triangle {
@@ -301,14 +283,7 @@
   min-height: 350px;
   display: flex;
   box-sizing: border-box;
-}
-
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-  background-image: url(../images/logo_white.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
 }
 
 .footer__columns {
@@ -319,20 +294,37 @@
 }
 
 .footer__column_content_copyright {
+  flex-direction: column;
   flex-basis: 711px;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
-  position: relative;
+  margin: 0;
 }
 
 .footer__author {
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   font-weight: 400;
   padding: 18px 0;
+}
+
+.logo_place_footer {
+  height: 35px;
+  background-image: url(../images/logo_white.svg);
+}
+
+.footer__column_content_info {
+  justify-content: flex-start;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+}
+
+.footer__column_content_social {
+  justify-content: flex-start;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
 }
 
 .footer__column-heading {

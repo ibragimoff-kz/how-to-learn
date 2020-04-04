@@ -293,17 +293,22 @@
   width: 90%;
 }
 
-.footer__column_content_copyright {
-  flex-direction: column;
-  flex-basis: 711px;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: 400;
+.footer__column {
+  display: flex;
   margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .footer__author {
   color: white;
+  line-height: 25px;
+  font-size: 18px;
   font-weight: 400;
   padding: 18px 0;
 }
@@ -311,20 +316,6 @@
 .logo_place_footer {
   height: 35px;
   background-image: url(../images/logo_white.svg);
-}
-
-.footer__column_content_info {
-  justify-content: flex-start;
-  flex-direction: column;
-  width: auto;
-  margin: 0;
-}
-
-.footer__column_content_social {
-  justify-content: flex-start;
-  flex-direction: column;
-  width: auto;
-  margin: 0;
 }
 
 .footer__column-heading {
